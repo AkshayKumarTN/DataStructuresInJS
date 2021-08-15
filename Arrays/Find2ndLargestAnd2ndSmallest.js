@@ -1,12 +1,10 @@
 let myArray = new Array();
 for(i=0;i<10;i++)
 {
-    var randomVal=Math.floor(Math.random()*1000);
+    var randomVal=Math.floor(Math.random()*(999-100+1)+100);
     myArray.push(randomVal);
     console.log("Random value "+i+" : " +randomVal);
 }
-
-
 var secondMaxNumber = SecoundMax(myArray);
 var secondMinNumber = SecoundMin(myArray);
 
